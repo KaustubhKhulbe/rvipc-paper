@@ -1,3 +1,31 @@
-\section{Middle Sections}
+\section{Design}
 
-You can have as many middle sections as possible based on your organization of the report.
+In order to achieve deterministic latencies, we need to ensure both hardware and software usage is deterministic. 
+
+\subsection{Hardware Design}
+To do so, we allow cores to sync and set up a dedicated FIFO buffer between them.
+
+This FIFO buffer is used to pipe data between cores. Since it is a dedicated resource, there is no contention for it and will provide highly predicatable latencies in hardware.
+
+The design then is a pool of FIFO buffers with a hardware unit to allocate buffers to cores. This hardware unit allows dedicated FIFOs to be set. Therefore, the only source of nondeterminsm is initializing the FIFO buffers.
+
+Once initialized, there is a fixed latency guarantee to send and recieve data between cores. 
+
+\subsection{Software Design}
+To avoid nondeterministic latencies in the software stack, we need to minimize the use of the kernel. This means we cannot invoke system calls and kernel resources, as they utilize the trap, I/O, and scheduling mechanisms out of the application programmer's control.
+
+We can do this by providing a set of user-space instructions that are exposed to the application programmer. These instructions can be used to configure FIFO buffers, send and receive data, and tear down FIFO buffers. 
+
+We chose to use a polling mechanism to configure and tear down FIFO buffers. This is because polling, as opposed to interrupt-based, does not need the kernel and the programmer has full control over the frequency of polling. 
+
+We modified the RISC-V toolchain and ISA to add the following instructions:
+\begin{enumerate}
+  \item \texttt{fconn}: Connect to a FIFO buffer
+  \item \texttt{fcreate}: Create a FIFO buffer
+  \item \texttt{fsend}: Write to a FIFO buffer
+  \item \texttt{frecv}: Read from a FIFO buffer
+  \item \texttt{fclose}: Close a FIFO buffer
+  \item \texttt{fstatus}: Check the status of a FIFO buffer
+\end{enumerate}
+
+We provide a modified toolchain and compiler to be able to support these instructions natively.

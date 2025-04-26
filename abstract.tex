@@ -1,5 +1,13 @@
 \begin{abstract}
 
-The abstract of the project report
+  With the collapse of Denard scaling and Moore's Law, architects are transitioning towards multi-core systems. This paradigm shifts allows multiple cores on a single die, connected by high-bandwidth interconnects. 
+
+  These interconnects are typically designed for high bandwidth but are elaborate NoCs, which often lead to nondeterministic latencies. Moreover, they are software-transparent, meaning application programmers cannot directly control these fabrics. Application programmers are left with shared memory as the primary means of communication. 
+
+  However, shared memory suffers from nondeterministic latencies due to the cache hierarchy, TLB flushes, and cache pollution. This is especially problematic for latency-critical applications such as autonomous vehicles, drones, robotics, and augmented/virtual reality applications.
+
+  In this paper, we present RVipc, a low-latency inter-core communication protocol for real-time systems. RVipc is designed for trusted environments, such as embedded systems.
+  It provides a mechanism to synchronize and communicate between cores with low latency and predictable latency metrics. 
+
 
 \end{abstract}
