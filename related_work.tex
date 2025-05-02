@@ -1,4 +1,8 @@
 \section{Related Work}
 \label{sec:related_work}
 
-The related work of your project~\cite{Dijkstra:SOSP:1967}.
+The paper by Zhael et. al \cite{Zhao:IoTCommProtocols:2018} discusses various IoT communication protocols as well as their hardware implications. While RVipc focusses on the same end use cases, our paper focusses on core to core synchronization, while Zhao et. al focus on IoT devices being able to efficiently communicate with each other. This causes differing design constraints.
+
+Another important technology is the AMD Infinity Fabric \cite{AMD:CDNA3:WhitePaper}. AMD's Infinity Fabric is a NoC interconnect technology for heterogeneous systems. It allows efficient communication between numerous different components on an SoC, such as CPUs and GPUs. This is a hardware communication protocol and infrastructure, similar to RVipc, but differ in the end goals. RVipc aims to provide a dedicated synchronization and communication channel between two cores, while Infinity Fabric aims to provide a general communication method from any component to any other.
+
+Both of these technologies focus on improving low-latency communication, but RVipc aims dedicated core to core communication, and focusses especially on deterministic latencies. This causes different design constraints to be considered.

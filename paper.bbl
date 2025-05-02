@@ -1,8 +1,43 @@
 \begin{thebibliography}{1}
 
-\bibitem{Dijkstra:SOSP:1967}
-{\sc Dijkstra, E.~W.}
-\newblock {The Structure of the ``THE'' Multiprogramming System}.
-\newblock In {\em Proceedings of the 1st ACM Symposium on Operating System Principles (SOSP'67)\/} (Oct. 1967).
+\bibitem{AMD:CDNA3:WhitePaper}
+{\sc {AMD}}.
+\newblock {AMD CDNA 3 Architecture White Paper}.
+\newblock In {\em AMD White Papers\/} (n.d.).
+\newblock Available at \url{https://www.amd.com/content/dam/amd/en/documents/instinct-tech-docs/white-papers/amd-cdna-3-white-paper.pdf}.
+
+\bibitem{Aspnes:IPC:Wiki}
+{\sc Aspnes, J.}
+\newblock {InterProcessCommunication}.
+\newblock In {\em Yale University CS Lecture Notes\/} (n.d.).
+\newblock Available at \url{https://www.cs.yale.edu/homes/aspnes/pinewiki/InterProcessCommunication.html}.
+
+\bibitem{Elbamby:VR:2018}
+{\sc Elbamby, M.~S., Perfecto, C., Bennis, M., and Doppler, K.}
+\newblock {Towards Low-Latency and Ultra-Reliable Virtual Reality}.
+\newblock In {\em IEEE Network\/} (Mar. 2018), vol.~32, pp.~78--84.
+\newblock Available at \url{https://arxiv.org/abs/1801.07587}.
+
+\bibitem{Jia:ATC24:TraplessKprobes}
+{\sc Jia, J., Le, M.~V., Ahmed, S., Williams, D., Jamjoom, H., and Xu, T.}
+\newblock Fast (trapless) kernel probes everywhere.
+\newblock In {\em Proceedings of the 2024 USENIX Annual Technical Conference (USENIX ATC '24)\/} (2024), USENIX Association, pp.~379--386.
+
+\bibitem{LowLatencyVarianceNoCRouter}
+{\sc not specified, A.}
+\newblock {A Low Latency Variance NoC Router}.
+\newblock In {\em Embedded and Multimedia Computing Technology and Service\/} (2012), pp.~89--97.
+\newblock Available at \url{https://link.springer.com/chapter/10.1007/978-94-007-5076-0_10}.
+
+\bibitem{Waterman:RISC-V:2019}
+{\sc Waterman, A., and Asanović, K.}
+\newblock {The RISC-V Instruction Set Manual, Volume I: User-Level ISA, Document Version 20191214-draft}.
+\newblock In {\em RISC-V Foundation\/} (2019).
+\newblock Available at \url{https://courses.grainger.illinois.edu/ece391/sp2025/docs/unpriv-isa-20240411.pdf}.
+
+\bibitem{Zhao:IoTCommProtocols:2018}
+{\sc Zhao, Z., Yu, W., Wei, Z., and Wei, Z.}
+\newblock Survey of communication protocols for internet-of-things and related challenges of fog and cloud computing integration.
+\newblock {\em arXiv preprint arXiv:1804.01747\/} (2018).
 
 \end{thebibliography}

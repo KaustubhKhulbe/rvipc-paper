@@ -13,14 +13,14 @@
 
   Multi-core systems are becoming increasingly fundamental to modern computing, from servers down to embedded systems and edge devices. This paradigm shift is driven by the need for higher compute power, as traditional scaling methods have plateued. 
 
-  Multi-core systems incorporate multiple cores on a single die, often tied together by high-bandwidth interconnects. For example, AMD utilizes Infinity Fabric, a proprietary interconnect technology, to connect multiple chips and cores.
+  Multi-core systems incorporate multiple cores on a single die, often tied together by high-bandwidth interconnects. For example, AMD utilizes Infinity Fabric \cite{AMD:CDNA3:WhitePaper}, a proprietary interconnect technology, to connect multiple chips and cores.
 
   There are several challenges with these forms of interconnects. First, they are usually designed for high bandwidth, and often cause nondeterministic latencies. This could be due to the routing algorithms or contention. More importantly, these interconnects are software-transparent, meaning application programmers cannot directly control how traffic flows across them. 
-  This limitation motivates the use of shared memory as the primary means of communication.
+  This limitation motivates the use of shared memory \cite{Aspnes:IPC:Wiki} as the primary means of communication.
 
-  Shared memory suffers from nondeterministic latencies due to the cache hierarchy, TLB flushes, and cache pollution.
+  Shared memory suffers from nondeterministic latencies due to the cache hierarchy, TLB flushes, and cache pollution. Modern NoCs also suffer from high variance in latencies \cite{LowLatencyVarianceNoCRouter}.
 
-  This is problematic for latency-critical applications such as autonomous vehicles, drones, robotics, and augmented/virtual reality applications. The success and safety of these applications directly depends on low-latency synchronization and communication between cores. A failure to do so significantly lowers the quality and feel of these products. 
+  This is problematic for latency-critical applications such as autonomous vehicles, drones, robotics, and augmented/virtual reality applications \cite{Elbamby:VR:2018}. The success and safety of these applications directly depends on low-latency synchronization and communication between cores. A failure to do so significantly lowers the quality and feel of these products. 
 
   This motivates the need for a low-latency inter-core commmunication protocol. In this paper, we present RVipc, a low-latency inter-core communication protocol designed for trusted environments. Our contributions are as follows:
 

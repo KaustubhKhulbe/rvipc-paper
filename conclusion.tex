@@ -1,3 +1,15 @@
 \section{Conclusion}
 
-This project is awesome.
+In this paper, we presented RVipc, a synchronization and communication mechanism on multicore systems for low and deterministic latencies. We achieved this by designing a hardware pool of FIFOs and an accompanying communication protocol that minimizes kernel resources and trap entries.
+
+We explored various design parameters, such as cache line sizes and L1 data cache sizes, to see how the system performs under various workloads. We also measured the first message latency, overall latency, and bandwidth of RVipc verus the current standard that is exposed to application programmers. That is, shared memory.
+
+We observed drastic improvements in first message latencies and significantly more deterministic latencies, along with expected improvements to bandwidth and overall latencies.
+
+\section{Future Work}
+
+The current implementation of RVipc allows configurable dedicated lniks for point-to-point communication between cores. A future exploration could involve customizeable communication for many-to-many cores, allowing for broadcasted communication that entirely avoids the cache hierarchy.
+
+Another future exploration would be to realize the design and it's area and power implications, as that is a major consideration in hardware design.
+
+Finally, we would also like to explore better software integration with current synchronization techniques and better integration on multi-core and distributed environments. Our evaluations were primarily done on a dual core system, and analytics on larger systems would be beneficial.
