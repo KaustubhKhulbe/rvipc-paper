@@ -42,6 +42,21 @@ We modified the RISC-V toolchain and ISA \cite{Waterman:RISC-V:2019} to add the 
 
 We provide a modified toolchain and compiler to be able to support these instructions natively.
 
+\subsubsection{Configurability}
+RVipc also allows a much more configurable data-flow path for the application programmer. A typical data-flow path may follow 
+
+\begin{equation}
+  \texttt{mem} \rightarrow \texttt{GPR} \rightarrow \texttt{FIFO} \rightarrow \texttt{GPR} \rightarrow \texttt{mem}
+\end{equation}
+
+But, for memory-independent, compute-bound, or sufficiently small workloads, the programmer can utilize
+\begin{equation}
+  \texttt{GPR} \rightarrow \texttt{FIFO} \rightarrow \texttt{GPR} \rightarrow \texttt{mem}
+\end{equation}
+where the bulk of the processing happens from GPR communication. For example, synchronization primitives like mutexes or status structs require only a few bytes of data, which can be sent across four GPRs.
+
+We believe this provides an edge in latency and compute bound tasks, as a higher degree of configurability can lead to more robust and reliable software. 
+
 \subsubsection{Handshake Protocol}
 The singular point of nondeterminism in RVipc is the setup of the FIFOs. This is due to limited hardware resources and the need for an arbitrator. Since each core polls to acquire a buffer, the FIFO \texttt{fconn} and \texttt{fcreate} instructions have nondeterministic latencies.
 
@@ -214,3 +229,12 @@ Let $\theta_{L_2}$ be the time required to bring $M$ lines into the L2 cache. Le
 \end{equation}
 
 Notice that as long as $M \cdot \beta < \alpha_{L_1} + \theta_{L_1}$, RVipc will yield lower latencies than SHM. The performance implications of SHM over RVipc is hardware depedendent.
+
+\section{Security Considerations}
+\subsection{Current Security Protections}
+While RVipc is designed for trusted environments, the system does incorporate security principles to ensure a certain level of robustness.
+
+Side-channel attacks take advantage of system metrics that are data dependent to decode information about the inputs. Because RVipc operates on GPRs, the FIFO send and recieves are constant time operations. Constant time operations make it resilient to timing side-channel attacks as an attacker cannot learn information about the input from send/recieve timing. Furthermore, to correctly setup a FIFO, both the sending and recieving Harts need to agree on a secret key. This prevents a malicious thread on a Hart from accessing a FIFO being used by a different thread on the same Hart.
+
+\subsection{Future Security Extensions}
+Currently, the FIFO keys are configurable keys. A future extension would be to introduce a kernel control status register (CSR) to configure how the keys are generated and used.

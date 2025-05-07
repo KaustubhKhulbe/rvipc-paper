@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.10)  2 MAY 2025 02:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.10)  7 MAY 2025 01:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1157,6 +1157,23 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 21.
  (./introduction.tex
+
+Package natbib Warning: Citation `AMD:CDNA3:WhitePaper' on page 1 undefined on 
+input line 16.
+
+
+Package natbib Warning: Citation `Aspnes:IPC:Wiki' on page 1 undefined on input
+ line 19.
+
+
+Package natbib Warning: Citation `LowLatencyVarianceNoCRouter' on page 1 undefi
+ned on input line 21.
+
+
+Package natbib Warning: Citation `Elbamby:VR:2018' on page 1 undefined on input
+ line 23.
+
+
 Overfull \hbox (3.71762pt too wide) in paragraph at lines 23--24
 \T1/LinuxLibertineT-TLF/m/n/10 (-20) au-tonomous ve-hi-cles, drones, ro-bot-ics
 , and aug-mented/virtual
@@ -1164,18 +1181,29 @@ Overfull \hbox (3.71762pt too wide) in paragraph at lines 23--24
 
 
 
+
+Package natbib Warning: Citation `AMD:CDNA3:WhitePaper' on page 1 undefined on 
+input line 31.
+
 ) (./middle_sections.tex
-<figures/isa.png, id=64, 663.47874pt x 241.90375pt>
+
+Package natbib Warning: Citation `Waterman:RISC-V:2019' on page 1 undefined on 
+input line 8.
+
+<figures/isa.png, id=7, 663.47874pt x 241.90375pt>
 File: figures/isa.png Graphic file (type png)
 <use figures/isa.png>
 Package pdftex.def Info: figures/isa.png  used on input line 20.
 (pdftex.def)             Requested size: 240.94499pt x 87.84935pt.
 
-
 Class acmart Warning: A possible image without description on input line 23.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `Jia:ATC24:TraplessKprobes' on page 1 undefine
+d on input line 28.
 
 
 
@@ -1186,6 +1214,13 @@ nc/dvips/libertine/lbtn_nh77jq.enc}{/opt/homebrew/Cellar/texlive/20250308/share
 live/20250308/share/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}
 
 ]
+
+Package natbib Warning: Citation `Waterman:RISC-V:2019' on page 2 undefined on 
+input line 34.
+
+
+LaTeX Warning: Reference `fig:hw_ipc' on page 2 undefined on input line 34.
+
 LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 36
 .
 
@@ -1200,87 +1235,118 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 54.
+(Font)              scaled to size 7.3pt on input line 49.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 54.
+(Font)              scaled to size 5.5pt on input line 49.
 
 
-<figures/hardware.png, id=89, 312.16624pt x 282.05376pt>
+
+LaTeX Warning: Reference `fig:gem5' on page 2 undefined on input line 109.
+
+<figures/hardware.png, id=28, 312.16624pt x 282.05376pt>
 File: figures/hardware.png Graphic file (type png)
 <use figures/hardware.png>
-Package pdftex.def Info: figures/hardware.png  used on input line 98.
+Package pdftex.def Info: figures/hardware.png  used on input line 113.
 (pdftex.def)             Requested size: 144.56845pt x 130.62427pt.
 
-Class acmart Warning: A possible image without description on input line 101.
+Class acmart Warning: A possible image without description on input line 116.
 
-<figures/gem5.pdf, id=90, 2266.4675pt x 616.3025pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 116.
+[2.2{/opt/homebrew/Cellar/texlive/20250308/share/texmf-dist/fonts/enc/dvips/inc
+onsolata/i4-t1-4.enc}{/opt/homebrew/Cellar/texlive/20250308/share/texmf-dist/fo
+nts/enc/dvips/libertine/lbtn_oexx6f.enc} <./figures/isa.png>]
+<figures/gem5.pdf, id=63, 2266.4675pt x 616.3025pt>
 File: figures/gem5.pdf Graphic file (type pdf)
 <use figures/gem5.pdf>
-Package pdftex.def Info: figures/gem5.pdf  used on input line 105.
+Package pdftex.def Info: figures/gem5.pdf  used on input line 120.
 (pdftex.def)             Requested size: 240.94499pt x 65.51772pt.
 
-Class acmart Warning: A possible image without description on input line 108.
+
+Class acmart Warning: A possible image without description on input line 123.
+
+
+Overfull \hbox (17.37471pt too wide) in paragraph at lines 140--140
+[]  \T1/zi4/m/n/10 --redirects /lib=/home/fluxbyt/riscv-compiled/lib \[] 
+ []
+
+<figures/first-message-lat.png, id=64, 1000.2168pt x 422.0568pt>
+File: figures/first-message-lat.png Graphic file (type png)
+<use figures/first-message-lat.png>
+Package pdftex.def Info: figures/first-message-lat.png  used on input line 151.
+
+(pdftex.def)             Requested size: 240.94499pt x 101.66922pt.
+
+Class acmart Warning: A possible image without description on input line 154.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 125.
-[2.2{/opt/homebrew/Cellar/texlive/20250308/share/texmf-dist/fonts/enc/dvips/inc
-onsolata/i4-t1-4.enc}{/opt/homebrew/Cellar/texlive/20250308/share/texmf-dist/fo
-nts/enc/dvips/libertine/lbtn_oexx6f.enc} <./figures/isa.png> <./figures/hardwar
-e.png>]
-Overfull \hbox (17.37471pt too wide) in paragraph at lines 125--125
-[]  \T1/zi4/m/n/10 --redirects /lib=/home/fluxbyt/riscv-compiled/lib \[] 
- []
 
-<figures/first-message-lat.png, id=124, 1000.2168pt x 422.0568pt>
-File: figures/first-message-lat.png Graphic file (type png)
-<use figures/first-message-lat.png>
-Package pdftex.def Info: figures/first-message-lat.png  used on input line 136.
+LaTeX Warning: Reference `fig:first_byte_latency' on page 3 undefined on input 
+line 159.
 
-(pdftex.def)             Requested size: 240.94499pt x 101.66922pt.
-
-Class acmart Warning: A possible image without description on input line 139.
-
-
-
-<figures/lat-v-dat.png, id=126, 855.6768pt x 422.0568pt>
+<figures/lat-v-dat.png, id=65, 855.6768pt x 422.0568pt>
 File: figures/lat-v-dat.png Graphic file (type png)
 <use figures/lat-v-dat.png>
-Package pdftex.def Info: figures/lat-v-dat.png  used on input line 159.
+Package pdftex.def Info: figures/lat-v-dat.png  used on input line 174.
 (pdftex.def)             Requested size: 240.94499pt x 118.84485pt.
 
-Class acmart Warning: A possible image without description on input line 162.
+Class acmart Warning: A possible image without description on input line 177.
 
-<figures/band-v-dat.png, id=128, 711.1368pt x 422.0568pt>
+
+LaTeX Warning: Reference `fig:bandwidth' on page 3 undefined on input line 180.
+
+
+
+
+[3.3 <./figures/hardware.png> <./figures/gem5.pdf> <./figures/first-message-lat
+.png> <./figures/lat-v-dat.png>]
+<figures/band-v-dat.png, id=90, 711.1368pt x 422.0568pt>
 File: figures/band-v-dat.png Graphic file (type png)
 <use figures/band-v-dat.png>
-Package pdftex.def Info: figures/band-v-dat.png  used on input line 171.
+Package pdftex.def Info: figures/band-v-dat.png  used on input line 186.
 (pdftex.def)             Requested size: 240.94499pt x 143.00153pt.
 
-Class acmart Warning: A possible image without description on input line 174.
+
+Class acmart Warning: A possible image without description on input line 189.
 
 
+LaTeX Warning: Reference `fig:cache_line' on page 4 undefined on input line 193
+.
 
-[3.3 <./figures/gem5.pdf> <./figures/first-message-lat.png> <./figures/lat-v-da
-t.png> <./figures/band-v-dat.png>]
-<figures/band-v-linesz.png, id=153, 1072.4868pt x 349.7868pt>
+<figures/band-v-linesz.png, id=91, 1072.4868pt x 349.7868pt>
 File: figures/band-v-linesz.png Graphic file (type png)
 <use figures/band-v-linesz.png>
-Package pdftex.def Info: figures/band-v-linesz.png  used on input line 182.
+Package pdftex.def Info: figures/band-v-linesz.png  used on input line 197.
 (pdftex.def)             Requested size: 240.94499pt x 78.5812pt.
 
-
-Class acmart Warning: A possible image without description on input line 185.
-
+Class acmart Warning: A possible image without description on input line 200.
 
 
-) (./related_work.tex) (./conclusion.tex
 
-[4.4 <./figures/band-v-linesz.png>]) (./metadata.tex) (./paper.bbl
+) (./related_work.tex
+
+Package natbib Warning: Citation `Zhao:IoTCommProtocols:2018' on page 4 undefin
+ed on input line 4.
+
+
+
+[4.4 <./figures/band-v-dat.png> <./figures/band-v-linesz.png>]
+
+Package natbib Warning: Citation `AMD:CDNA3:WhitePaper' on page 5 undefined on 
+input line 6.
+
+) (./conclusion.tex) (./metadata.tex
+
+) (./paper.bbl
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
 (Font)              scaled to size 8.0pt on input line 4.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
@@ -1293,30 +1359,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--8
 
 )
 
+Package natbib Warning: There were undefined citations.
+
+
 Class acmart Warning: Some images may lack descriptions.
 
 
 
 
+Package balance Warning: You have called \balance in second column
+(balance)                Columns might not be balanced.
 
 [5.5{/opt/homebrew/Cellar/texlive/20250308/share/texmf-dist/fonts/enc/dvips/lib
 ertine/lbtn_ncsllp.enc}{/opt/homebrew/Cellar/texlive/20250308/share/texmf-dist/
-fonts/enc/dvips/libertine/lbtn_7grukw.enc}] (./paper.aux)
+fonts/enc/dvips/libertine/lbtn_7grukw.enc}] (./paper.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: E1AEACFE56BD2089DBDE5079B06CA456;1716.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `paper.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `paper.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  6D21A1E1C36ACCDEB2DB833C1C3AE3CA;2335.
  ) 
 Here is how much of TeX's memory you used:
- 20708 strings out of 473190
- 337463 string characters out of 5705377
- 764660 words of memory out of 5000000
- 43066 multiletter control sequences out of 15000+600000
- 679865 words of font info for 297 fonts, out of 8000000 for 9000
+ 20725 strings out of 473190
+ 337979 string characters out of 5705377
+ 763919 words of memory out of 5000000
+ 43052 multiletter control sequences out of 15000+600000
+ 682001 words of font info for 313 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 90i,13n,131p,1002b,720s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,13n,131p,1002b,554s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20250308/share/texmf-dist/fonts/type1/public/in
 consolata/Inconsolata-zi4r.pfb></opt/homebrew/Cellar/texlive/20250308/share/tex
 mf-dist/fonts/type1/public/newtx/LibertineMathMI.pfb></opt/homebrew/Cellar/texl
@@ -1330,10 +1419,10 @@ ibertineTI.pfb></opt/homebrew/Cellar/texlive/20250308/share/texmf-dist/fonts/ty
 pe1/public/newtx/NewTXMI.pfb></opt/homebrew/Cellar/texlive/20250308/share/texmf
 -dist/fonts/type1/public/newtx/txmiaX.pfb></opt/homebrew/Cellar/texlive/2025030
 8/share/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on paper.pdf (5 pages, 609570 bytes).
+Output written on paper.pdf (5 pages, 610479 bytes).
 PDF statistics:
- 263 PDF objects out of 1000 (max. 8388607)
- 214 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 500000)
- 63128 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 216 PDF objects out of 1000 (max. 8388607)
+ 169 compressed objects within 2 object streams
+ 78 named destinations out of 1000 (max. 500000)
+ 63024 words of extra memory for PDF output out of 74296 (max. 10000000)
 

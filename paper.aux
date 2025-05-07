@@ -6,6 +6,7 @@
 \citation{Aspnes:IPC:Wiki}
 \citation{LowLatencyVarianceNoCRouter}
 \citation{Elbamby:VR:2018}
+\citation{AMD:CDNA3:WhitePaper}
 \citation{Waterman:RISC-V:2019}
 \citation{Jia:ATC24:TraplessKprobes}
 \@writefile{toc}{\contentsline {section}{Abstract}{1}{section*.1}\protected@file@percent }
@@ -19,10 +20,11 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces RISC-V ISA Extensions}}{2}{figure.caption.3}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:isa_extensions}{{1}{2}{RISC-V ISA Extensions}{figure.caption.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Handshake Protocol}{2}{subsubsection.2.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Configurability}{2}{subsubsection.2.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}Handshake Protocol}{2}{subsubsection.2.2.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Implementation}{2}{subsection.2.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Architectural overview of Gem5 simulation, including the FIFO pool, CPU cores, caches, and memory controller.}}{2}{figure.caption.4}\protected@file@percent }
-\newlabel{fig:hw_ipc}{{2}{2}{Architectural overview of Gem5 simulation, including the FIFO pool, CPU cores, caches, and memory controller}{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Architectural overview of Gem5 simulation, including the FIFO pool, CPU cores, caches, and memory controller.}}{3}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:hw_ipc}{{2}{3}{Architectural overview of Gem5 simulation, including the FIFO pool, CPU cores, caches, and memory controller}{figure.caption.4}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Gem5 configuration setup.}}{3}{figure.caption.5}\protected@file@percent }
 \newlabel{fig:gem5}{{3}{3}{Gem5 configuration setup}{figure.caption.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Parameter Sweep}{3}{subsection.2.4}\protected@file@percent }
@@ -33,20 +35,19 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Overall latency comparison of RVipc and SHM.}}{3}{figure.caption.7}\protected@file@percent }
 \newlabel{fig:overall_latency}{{5}{3}{Overall latency comparison of RVipc and SHM}{figure.caption.7}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.3}Bandwidth}{3}{subsubsection.2.4.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Bandwidth comparison of RVipc and SHM.}}{3}{figure.caption.8}\protected@file@percent }
-\newlabel{fig:bandwidth}{{6}{3}{Bandwidth comparison of RVipc and SHM}{figure.caption.8}{}}
 \citation{Zhao:IoTCommProtocols:2018}
-\citation{AMD:CDNA3:WhitePaper}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Bandwidth comparison of RVipc and SHM.}}{4}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:bandwidth}{{6}{4}{Bandwidth comparison of RVipc and SHM}{figure.caption.8}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.4}Cache Line}{4}{subsubsection.2.4.4}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Bandwidth vs. Cache Line Size Comparison of RVipc and SHM.}}{4}{figure.caption.9}\protected@file@percent }
 \newlabel{fig:cache_line}{{7}{4}{Bandwidth vs. Cache Line Size Comparison of RVipc and SHM}{figure.caption.9}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Cache Pollution and Latency Analysis}{4}{subsection.2.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.1}Cache Pollution}{4}{subsubsection.2.5.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.2}Latency Analysis}{4}{subsubsection.2.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}Related Work}{4}{section.3}\protected@file@percent }
-\newlabel{sec:related_work}{{3}{4}{Related Work}{section.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusion}{4}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Future Work}{4}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Security Considerations}{4}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Current Security Protections}{4}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Future Security Extensions}{4}{subsection.3.2}\protected@file@percent }
+\citation{AMD:CDNA3:WhitePaper}
 \bibstyle{acm}
 \bibdata{ref}
 \bibcite{AMD:CDNA3:WhitePaper}{{1}{}{{}}{{}}}
@@ -62,7 +63,11 @@
 \newlabel{tocindent2}{11.49998pt}
 \newlabel{tocindent3}{18.34998pt}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\@writefile{toc}{\contentsline {section}{\numberline {6}Metadata}{5}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Related Work}{5}{section.4}\protected@file@percent }
+\newlabel{sec:related_work}{{4}{5}{Related Work}{section.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{5}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Future Work}{5}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Metadata}{5}{section.7}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{References}{5}{section*.11}\protected@file@percent }
 \newlabel{TotPages}{{5}{5}{}{page.5}{}}
 \gdef \@abspage@last{5}
